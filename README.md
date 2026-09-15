@@ -27,8 +27,6 @@ Both datasets are split into 5 parts for storage convenience.
 - `data_spilt/wheat_1_data_split.pkl` — Pre-trained division model for the wheat dataset.
 - `data_spilt/__init__.py` — Package initialization file.
 
-> **Note:** The core field-road classification and modeling code (including the feature-extraction and classification methods described in the manuscript, e.g. DBSCAN+Rules, DT, DBSCAN+OD+DBI, GCN) is **not hosted in this repository**. It is provided as a Supplemental File with the published manuscript.
-
 ## Usage Instructions
 1. Unzip the wheat archives (`wheat1_0.zip` – `wheat1_4.zip`). The paddy data is already provided as unzipped folders (`paddy_0/` – `paddy_4/`).
 2. In `data_spilt/split_read.py`, set `files_path` to the local path where the unzipped raw trajectory files are stored, and set `path` to the matching `.pkl` file (`paddy_data_split.pkl` or `wheat_1_data_split.pkl`).
